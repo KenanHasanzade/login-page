@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  outline: 0;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./images/MacBook\ Pro\ 14_\ -\ 2.png);
+}
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.login {
+  height: 100vh;
+  width: 65%;
+  background: #ffffff;
+  border-radius: 24px 0px 0px 24px;
+  animation: main 1.2s ease-in-out;
+}
+.icons {
+  width: 35%;
+}
+.img {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+
+  animation: moveOfCosmo 1.2s ease-in-out;
+}
+select {
+  border: none;
+  font-size: 20px;
+}
+.text {
+  color: white;
+  font-size: 78px;
+  position: absolute;
+  left: 10%;
+  bottom: 80%;
+  animation: textmove 1.2s ease-in-out;
+  font-weight: 500;
+}
+.image {
+  position: absolute;
+  top: 50%;
+
+  animation: moveOfearth 1.2s ease-in-out;
+}
+
+@keyframes main {
+  from {
+    transform: translateX(170%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes moveOfCosmo {
+  from {
+    transform: translateX(-250%);
+  }
+  to {
+    transform: translateX(0)rotate(360deg);
+  }
+}
+@keyframes textmove {
+  from {
+    transform: translateY(-300%);
+  }
+  to {
+    transform: translateY(0)rotate(360deg);
+  }
+}
+@keyframes moveOfearth {
+  from {
+    transform: translateY(250%);
+  }
+  to {
+    transform: translateY(0)rotate(360deg);
+  }
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.langselect {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 16px;
+  margin: 25px 36px 0 0;
+}
+.registerform {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.registerform > div > div:first-of-type {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.18em;
+  color: #181818;
+}
+.signup {
+  display: flex;
+  margin-top: 36px;
+}
+.btngoogle {
+  padding: 10px 0px 10px 8px;
+  gap: 4px;
+  width: 220px;
+  height: 56px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnfacebook {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #181818;
+  padding: 10px 0px 10px 8px;
+  width: 249px;
+  height: 56px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  margin-left: 32px;
+}
+.registerform > div > div:nth-of-type(3) {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.18em;
+  color: #181818;
+  display: flex;
+  justify-content: center;
+  margin-top: 109px;
+  margin-bottom: 61px;
+}
+input {
+  width: 502px;
+  height: 40px;
+  margin-bottom: 35px;
+  border: none;
+  color: black;
+  text-indent: 10px;
+  border-bottom: 1px solid rgba(26, 23, 23, 0.38);
+}
+input[type="submit"] {
+  padding: 10px;
+  width: 502px;
+  height: 48px;
+  background: #279574;
+  border-radius: 8px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
